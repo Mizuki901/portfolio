@@ -27,6 +27,7 @@ h1 {
 h2 {
     position: relative;
     display: inline-block;
+    margin-bottom: 40px;
     padding: 0 50px;
     font-weight: 100;
     font-size: 28px;
@@ -54,7 +55,15 @@ section {
     margin-bottom: 60px;
 }
 
+.profile .my-photo {
+    width: 100px;
+    height: 100px;
+    margin: 40px auto 10px auto;
+    border-radius: 50%;
+}
+
 .profile .my-name {
+    font-size: 24px;
     margin-bottom: 5px;
 }
 
@@ -98,9 +107,9 @@ section {
 }
 
 .content {
-    width: 180px;
-    height: 180px;
-    margin: 0 60px;
+    width: 140px;
+    height: 140px;
+    margin: 0 80px;
     background: #ccc;
     color: #666;
 }
@@ -111,7 +120,7 @@ section {
 }
 
 .content .name {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .content:hover {
@@ -125,12 +134,7 @@ section {
         width: 200px;
     }
     .content {
-        width: 140px;
-        height: 140px;
         margin: 0 40px;
-    }
-    .content .name {
-        padding-top: 20px;
     }
 }
   
