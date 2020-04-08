@@ -1,5 +1,66 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans JP', Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.border {
+    background: #333;
+    width: 120px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 40px 60px 40px 60px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 28px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.profile .my-name {
+    margin-bottom: 5px;
+}
+
+.profile .statement {
+    font-size: 14px;
+}
+
+.features-container {
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature .title {
+    font-size: 20px;
+}
+
+.feature i {
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+    color: #666;
+}
+
+.feature .description {
+    font-size: 16px;
 }
