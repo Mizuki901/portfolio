@@ -66,6 +66,15 @@ header {
     margin-top: 50px;
 }
 
+.home a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.home a:hover {
+    text-decoration: none;
+}
+
 .global-nav {
     float: right;
     margin-top: 50px;
@@ -149,7 +158,6 @@ section {
     height: 140px;
     margin: 0 80px;
     background: #ccc;
-    color: #666;
 }
 
 .content i {
@@ -161,10 +169,18 @@ section {
     padding-top: 20px;
 }
 
+.content a {
+    text-decoration: none;
+    color: #666;
+}
+
 .content:hover {
     transition-duration: 0.3s;
-    color: #fff;
     background: #666;
+}
+
+.content a:hover {
+    color: #fff;
 }
 
 @media screen and (max-width:1000px) {
