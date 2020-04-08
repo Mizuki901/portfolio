@@ -51,6 +51,44 @@ h2:after {
     right: 0;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.home {
+    float: left;
+    margin-top: 50px;
+}
+
+.global-nav {
+    float: right;
+    margin-top: 50px;
+}
+  
+.global-nav li {
+    float: left;
+    margin: 0 20px;
+    font-size: 16px;
+    list-style: none;
+}
+  
+.global-nav li a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.global-nav li a:hover {
+    border-bottom: 2px solid #333;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
 section {
     margin-bottom: 60px;
 }
@@ -139,6 +177,22 @@ section {
 }
   
 @media screen and (max-width:760px) {
+    .home {
+        float: none;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .global-nav {
+        float: none;
+        padding-left: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .global-nav li {
+        display: inline;
+        float: none;
+        margin: 0 8px;
+    }     
     .feature {
         width: 400px;
         margin: 40px;
