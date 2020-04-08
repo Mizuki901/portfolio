@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    margin: 40px 40px 40px 40px;
+    margin: 20px 40px 40px 40px;
     text-align: center;
 }
 
@@ -27,7 +27,6 @@ h1 {
 h2 {
     position: relative;
     display: inline-block;
-    margin-bottom: 40px;
     padding: 0 50px;
     font-weight: 100;
     font-size: 28px;
@@ -105,7 +104,7 @@ section {
 .profile .my-photo {
     width: 100px;
     height: 100px;
-    margin: 40px auto 10px auto;
+    margin: 40px auto 20px auto;
     border-radius: 50%;
 }
 
@@ -181,6 +180,15 @@ section {
 
 .content a:hover {
     color: #fff;
+}
+
+.biography {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.biography ul {
+    text-align: left;
 }
 
 @media screen and (max-width:1000px) {
