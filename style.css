@@ -182,12 +182,12 @@ section {
     color: #fff;
 }
 
-.biography {
+.biography, .skills {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.biography ul {
+.biography ul, .skills ul {
     text-align: left;
 }
 
