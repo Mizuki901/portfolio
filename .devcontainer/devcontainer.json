@@ -1,0 +1,21 @@
+{
+    "image": "node:alpine",
+    "hostRequirements": {
+        "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "npm install",
+    "postCreateCommand": "",
+    "postAttachCommand": {
+        "server": "npm run serve"
+    },
+    "portsAttributes": {
+        "8080": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [
+        8080
+    ]
+}
