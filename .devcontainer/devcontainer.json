@@ -9,6 +9,13 @@
     "postAttachCommand": {
         "server": "npm run serve"
     },
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "index.html"
+            ]
+        }
+    },
     "portsAttributes": {
         "8080": {
             "label": "Application",
