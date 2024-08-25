@@ -74,7 +74,7 @@ a, a:visited {
 }
 
 .spacer {
-  height: 20px;
+  height: 10px;
 }
 
 #photo {
@@ -93,6 +93,21 @@ a, a:visited {
 #fullname {
   color: lightgray;
   font-size: 0.8rem;
+}
+
+p#icons {
+
+  text-align: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  margin: 0 2px;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
 }
 
 footer {
