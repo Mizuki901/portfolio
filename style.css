@@ -6,13 +6,17 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   color: gray;
   font-family: "M PLUS 1p", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 header {
@@ -37,16 +41,18 @@ header * {
 }
 
 header ul {
-  padding-left: 0;
-  margin-light: auto;
+  margin-left: auto;
 }
 
 header li {
-  padding-left: 10px;
+  padding-right: 10px;
   list-style: none;
 }
 
 #content {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
   margin-top: 60px;
 }
 
@@ -59,15 +65,24 @@ h1, h2 {
 }
 
 p {
-  font-size: 0.9rem;
-  margin: 10px 0;
+  margin: 20px 0;
+  line-height: 2;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.spacer {
+  height: 20px;
 }
 
 #photo {
   display: block;
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 #name {
@@ -82,7 +97,17 @@ p {
 
 footer {
   padding-top: 40px;
+  padding-bottom: 20px;
   font-size: 0.6rem;
   color: lightgray;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
 }

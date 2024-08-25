@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Mizuki901's Portfolio</title>
-</head>
-<body>
-    <header>
-        <span>Portfolio</span>
-        <ul>
-            <li>Fav</li>
-            <li>Bio</li>
-        </ul>
-    </header>
-    <div id="content">
-        <h1>Portfolio</h1>
-        <img id="photo" src="img/photo.jpg" alt="photo">
-        <p id="name">
-            <span class="mdi mdi-github"></span>
-            Mizuki901
-            <br>
-            <span id="fullname">
-                hirakawa.mizuki
-            </span>
-        </p>
-        </div>
-        <div class="strength">
-            <h2>Strength</h2>
-            <div class="strength">
-                <p>
-                    フロントエンドとバックエンドの両方のエンジニア経験あり。また、インフラエンジニアの経験もあり、特にLinux、AWS、Dockerが得意。
-                </p>
-                <p>
-                    認定スクラムマスター (CSM®) の資格を有し、スクラムマスターとしてチームの支援を行える。また、LeSS (Large-Scale Scrum) のスクラムマスター経験もある。
-                </p>
-            </div>
-        </div>
-        <div class="favorite">
-            <h2>Favorite</h2>
-            <p>
-                Node.js, JavaScript, TypeScript, Vue.js, Ruby, C, Vite, Vitest, Cypress, Docker, Ansible, AWS, GitLab, GitHub, Codespaces, GitHub Copilot, VSCode, Scrum, Agile, DevOps
-            </p>
-        </div>
-        <div class="bio">
 
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Mizuki901's Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <span><a href="#content">Portfolio</a></span>
+    <ul>
+      <li><a href="#favorite">Fav</a></li>
+      <li><a href="#biography">Bio</a></li>
+    </ul>
+  </header>
+  <div id="content">
+    <h1>Portfolio</h1>
+    <div class="spacer"></div>
+    <img id="photo" src="img/photo.jpg" alt="photo">
+    <p id="name">
+      <a href="https://github.com/Mizuki901" target="_blank" rel="noopener noreferrer">
+        <span class="mdi mdi-github"></span>
+        Mizuki901
+      </a>
+      <br>
+      <span id="fullname">
+        hirakawa.mizuki
+      </span>
+    </p>
+    <div class="spacer"></div>
+    <div id="strength">
+      <h2>Strength</h2>
+      <p>
+        フロントエンドとバックエンドの両方のエンジニア経験あり。
+        また、インフラエンジニアの経験もあり、特にLinux、AWS、Dockerが得意。
+      </p>
+      <p>
+        認定スクラムマスター (CSM®) の資格を有し、スクラムマスターとしてチームの支援を行える。
+        また、LeSS (Large-Scale Scrum) のスクラムマスター経験もある。
+      </p>
     </div>
-    <footer>
-        &copy; 2024 Mizuki901
-    </footer>
+    <div id="favorite">
+      <h2>Favorite</h2>
+      <p>
+        Node.js, JavaScript, TypeScript, Vue.js, Vite, Vitest, Cypress, 
+        Ruby, C, Docker, Ansible, AWS, Scrum, Agile, DevOps, 
+        GitLab, GitHub, Codespaces, GitHub Copilot, VSCode
+      </p>
+    </div>
+    <div id="biography">
+      <h2>Biography</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2024 Mizuki901
+  </footer>
 </body>
+
 </html>
