@@ -110,6 +110,10 @@ p#icons {
   border-radius: 50%;
 }
 
+.year {
+  font-family: "Oleo Script", system-ui;  
+}
+
 footer {
   padding-top: 40px;
   padding-bottom: 20px;
