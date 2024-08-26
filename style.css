@@ -1,230 +1,151 @@
+:root {
+  --header-height: 40px;
+  --heading-margin: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: gray;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+html {
+  /* ページ内リンクで見出しよりも少し上にリンクするための設定 */
+  scroll-snap-type: y proximity;
+	scroll-padding-top: 60px;
+  /* スクロールをスムースにする */
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans JP', Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
-    font-size: 18px;
-    color: #333;
-}
-
-.border {
-    background: #333;
-    width: 120px;
-    height: 2px;
-    margin: 0 auto;
-}
-
-.container {
-    margin: 20px 40px 40px 40px;
-    text-align: center;
-}
-
-h1 {
-    font-weight: 100;
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    position: relative;
-    display: inline-block;
-    padding: 0 50px;
-    font-weight: 100;
-    font-size: 28px;
-}
-
-h2:before, h2:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    width: 30px;
-    height: 1px;
-    background-color: #333;
-}
-
-h2:before {
-    left:0;
-}
-
-h2:after {
-    right: 0;
-}
-
-a:hover {
-    text-decoration: underline;
+  width: 100%;
 }
 
 header {
-    width: 90%;
-    height: 100px;
-    margin: 0 auto;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  height: var(--header-height);
+  width: 100%;
+  padding: 0 10px;
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  z-index: 100;
 }
 
-.home {
-    float: left;
-    margin-top: 50px;
+header * {
+  display: inline-block;
+  position: relative;
+  font-family: "Oleo Script", system-ui;
 }
 
-.home a {
-    text-decoration: none;
-    color: #333;
-}
-  
-.home a:hover {
-    text-decoration: none;
+header ul {
+  margin-left: auto;
 }
 
-.global-nav {
-    float: right;
-    margin-top: 50px;
-}
-  
-.global-nav li {
-    float: left;
-    margin: 0 20px;
-    font-size: 16px;
-    list-style: none;
-}
-  
-.global-nav li a {
-    text-decoration: none;
-    color: #333;
-}
-  
-.global-nav li a:hover {
-    border-bottom: 2px solid #333;
-    padding-bottom: 3px;
-    text-decoration: none;
+header li {
+  padding-right: 10px;
+  list-style: none;
 }
 
-section {
-    margin-bottom: 60px;
+#content {
+  width: 80%;
+  max-width: 720px;
+  margin: 0 auto;
+  /* ヘッダーの高さ、および、マージンの相殺の考慮 */
+  margin-top: calc( var(--header-height) + var(--heading-margin) );
 }
 
-.profile .my-photo {
-    width: 100px;
-    height: 100px;
-    margin: 40px auto 20px auto;
-    border-radius: 50%;
+h1, h2 {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: var(--heading-margin) 0;
 }
 
-.profile .my-name {
-    font-size: 24px;
-    margin-bottom: 5px;
+p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 2;
 }
 
-.profile .statement {
-    font-size: 14px;
+header a, header a:visited, #name a, #name a:visited, #icons a, #icons a:visited {
+  text-decoration: none;
 }
 
-.features-block {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.spacer {
+  height: 40px;
 }
 
-.feature {
-    width: 280px;
-    margin: 0 10px;
+#photo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
-.feature .title {
-    font-size: 18px;
+#name {
+  text-align: center;
+  line-height: 1.1;
 }
 
-.feature .description {
-    font-size: 16px;
+#fullname {
+  color: lightgray;
+  font-size: 0.8rem;
 }
 
-.feature i {
-    font-size: 40px;
-    margin: 20px 0 20px 0;
-    color: #666;
+p#icons {
+  text-align: center;
 }
 
-.contents-block {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  margin: 0 2px;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
 }
 
-.content {
-    width: 140px;
-    height: 140px;
-    margin: 0 80px;
-    background: #ccc;
+.icon#github:hover {
+  background-color: #1f2328;
 }
 
-.content i {
-    font-size: 40px;
-    margin: 20px 0 20px 0;
+.icon#x:hover {
+  background-color: black;
 }
 
-.content .name {
-    padding-top: 20px;
+.icon#zenn:hover {
+  background-color: #3ea8ff;
 }
 
-.content a {
-    text-decoration: none;
-    color: #666;
+.year {
+  font-family: "Oleo Script", system-ui;  
 }
 
-.content:hover {
-    transition-duration: 0.3s;
-    background: #666;
+footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 0.6rem;
+  color: lightgray;
+  text-align: center;
 }
 
-.content a:hover {
-    color: #fff;
+@media screen and (max-width: 768px) {
+  header * {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }
 
-.biography, .skills {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.biography ul, .skills ul {
-    text-align: left;
-}
-
-@media screen and (max-width:1000px) {
-    .feature {
-        width: 200px;
-    }
-    .content {
-        margin: 0 40px;
-    }
-}
-  
-@media screen and (max-width:760px) {
-    .home {
-        float: none;
-        margin-top: 15px;
-        text-align: center;
-    }
-    .global-nav {
-        float: none;
-        padding-left: 0;
-        margin-top: 15px;
-        text-align: center;
-    }
-    .global-nav li {
-        display: inline;
-        float: none;
-        margin: 0 8px;
-    }     
-    .feature {
-        width: 400px;
-        margin: 40px;
-    }
-    .contents-block {
-        display: block;
-    }
-    .content {
-        margin: 0 auto 40px auto;
-    }
+@media screen and (max-width: 480px) {
 }

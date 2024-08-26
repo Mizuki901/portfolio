@@ -1,77 +1,160 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | hirakawa.mizuki</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="home">Portfolio</div>
-        <nav>
-            <ul class="global-nav">
-                <li><a href="contents/biography.html">Biography</a></li>
-                <li><a href="contents/skills.html">Skills</a></li>
-                <li><a href="contents/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="container">
-        <h1>Portfolio</h1>
-        <div class="border"></div>
-        <section class="profile">
-            <img class="my-photo" src="img/photo.jpg" alt="photo">
-            <br>
-            <div class="my-name">hirakawa.mizuki</div>
-            <div class="statement">スクラム・アジャイル・Webアプリ開発・CI/CD・Gitが大好きなエンジニアです。<br>認定スクラムマスター。フットサルが趣味です。</div>    
-        </section>
-        <section class="features">
-            <h2>My Features</h2>
-            <div class="features-block">
-                <div class="feature">
-                    <div class="title">開発者＆<br>スクラムマスター</div>
-                    <div class="icon"><i class="fas fa-male"></i></div>
-                    <div class="description">Webアプリケーション開発やテスト駆動開発だけでなく、スクラムマスターとしても活躍できます。両方の視点を持ち合わせて、チームのパフォーマンス向上に貢献できます。</div>
-                </div>
-                <div class="feature">
-                    <div class="title">アプリ開発だけでなく<br>CI/CDも得意</div>
-                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                    <div class="description">Vue.js、Node.js、AWSなどの技術が好きで、仕事でもプライベートでも開発をしています。CI/CDも得意であり、ツールを組み合わせてパイプラインを構築するのも趣味です。</div>
-                </div>
-                <div class="feature">
-                    <div class="title">プロセス改善の<br>知見でチームに貢献</div>
-                    <div class="icon"><i class="far fa-lightbulb"></i></div>
-                    <div class="description">会社の業務に留まらず、JASPICという社外のプロセス改善の団体にも所属し、日々研修を行なっています。開発だけでなくチームや組織の改善の観点でもチームに貢献できます。</div>
-                </div>    
-            </div>
-        </section>
-        <section class="about">
-            <h2>About Me</h2>
-            <div class="contents-block">
-                <div class="content">
-                    <a href="contents/biography.html">
-                            <div class="name">Biography</div>
-                        <div class="icon"><i class="fas fa-history"></i></div>
-                    </a>
-                </div>
-                <div class="content">
-                    <a href="contents/skills.html">
-                        <div class="name">Skills</div>
-                        <div class="icon"><i class="far fa-heart"></i></div>
-                    </a>
-                </div>
-                <div class="content">
-                    <a href="contents/contact.html">
-                            <div class="name">Contact</div>
-                        <div class="icon"><i class="far fa-comment-dots"></i></div>
-                    </a>
-                </div>
-            </div>
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Mizuki901's Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <span><a href="#content">Portfolio</a></span>
+    <ul>
+      <li><a href="#favorite">Fav</a></li>
+      <li><a href="#biography">Bio</a></li>
+    </ul>
+  </header>
+  <div id="content">
+    <h1>Portfolio</h1>
+    <div class="spacer"></div>
+    <img id="photo" src="img/photo.jpg" alt="photo">
+    <p id="name">
+      <a href="https://github.com/Mizuki901" target="_blank" rel="noopener noreferrer">
+        <span class="mdi mdi-github"></span>
+        Mizuki901
+      </a>
+      <br>
+      <span id="fullname">
+        hirakawa.mizuki
+      </span>
+    </p>
+    <p id="icons">
+      <a href="https://github.com/Mizuki901" target="_blank" rel="noopener noreferrer">
+        <img class="icon" id="github" src="icon/github.svg" alt="github">
+      </a>
+      <a href="https://x.com/mizuki901" target="_blank" rel="noopener noreferrer">
+        <img class="icon" id="x" src="icon/x.svg" alt="x">
+      </a>
+      <a href="https://zenn.dev/mizuki901" target="_blank" rel="noopener noreferrer">
+        <img class="icon" id="zenn" src="icon/zenn.svg" alt="zenn">
+      </a>
+    </p>
+    <div class="spacer"></div>
+    <div id="strength">
+      <h2>Strength</h2>
+      <p>
+        フロントエンドとバックエンドの両方のエンジニア経験がある。
+        また、インフラエンジニアの経験もあり、特にLinux、AWS、Dockerが得意。
+      </p>
+      <p>
+        認定スクラムマスター (CSM®) の資格を有し、スクラムマスターとしてチームの支援を行える。
+        また、LeSS (Large-Scale Scrum) のスクラムマスター経験もある。
+      </p>
     </div>
+    <div id="favorite">
+      <h2>Favorite</h2>
+      <p>
+        Node.js, JavaScript, TypeScript, Vue.js, Vite, Cypress, 
+        Ruby, C, Docker, Ansible, AWS, Scrum, Agile, DevOps, 
+        GitLab, GitHub, Codespaces, GitHub Copilot, VSCode
+      </p>
+    </div>
+    <div id="biography">
+      <h2>Biography</h2>
+      <p>
+        <span class="year">2015</span>
+        <br>
+        九州大学大学院 情報学専攻 修士課程修了。<br>
+        <a href="https://www.fujitsu.com/jp/group/fjj/" target="_blank" rel="noopener noreferrer">
+          富士通株式会社
+        </a>
+        に新卒入社。<br>
+        複数のアジャイルプロジェクトを経験。
+      </p>
+      <p>
+        <span class="year">2016</span>
+        <br>
+        Microsoft主催の
+        <a href="https://devopsjp.connpass.com/event/32883/" target="_blank" rel="noopener noreferrer">
+          DevOpsハッカソン
+        </a>
+        に参加。
+      </p>
+      <p>
+        <span class="year">2017</span>
+        <br>
+        プロジェクトで始めてスクラムマスターを経験。<br>
+        <a href="https://linedev.connpass.com/event/51290/" target="_blank" rel="noopener noreferrer">
+          LINE BOT AWARD 2017
+        </a>
+        に1人で応募し敗退。
+      </p>
+      <p>
+        <span class="year">2018</span>
+        <br>
+        <a href="https://www.jaspic.org/" target="_blank" rel="noopener noreferrer">
+          JASPIC
+        </a>
+        （ソフトウェア開発プロセス改善の非営利団体）に所属。<br>
+        <a href="https://www.jaspic.org/events/sj/spi_japan_2018/" target="_blank" rel="noopener noreferrer">
+          SPI Japan 2018
+        </a>
+        のプログラム委員を務める。
+      </p>
+      <p>
+        <span class="year">2019</span>
+        <br>
+        <a href="https://www.odd-e.jp/training/" target="_blank" rel="noopener noreferrer">
+          認定スクラムマスター (CSM®) 
+        </a>
+        の資格を取得。<br>
+        <a href="https://www.jaspic.org/events/sj/spi_japan_2019/" target="_blank" rel="noopener noreferrer">
+          SPI Japan 2019
+        </a>
+        のプログラム委員を務める。<br>
+        SPI Japan 2019に登壇（
+        <a href="https://www.jaspic.org/event/2019/SPIJapan/session2A/2A3_ID021.pdf" target="_blank" rel="noopener noreferrer">
+          発表内容
+        </a>
+        ）。<br>
+        JASPIC会員企業による事例発表会において、2019年度最優秀発表賞を受賞。
+      </p>
+      <p>
+        <span class="year">2020</span>
+        <br>
+        <a href="https://less.works/jp/less/framework" target="_blank" rel="noopener noreferrer">
+          LeSS (Large-Scale Scrum)
+        </a>
+        のプロジェクトでスクラムマスターを経験。<br>
+        富士通株式会社を退職。<br>
+        JASPICを退会。<br>
+        <a href="https://www.val.co.jp/" target="_blank" rel="noopener noreferrer">
+          株式会社ヴァル研究所
+        </a>
+        に転職（所属：
+        <a href="https://api-info.ekispert.com/" target="_blank" rel="noopener noreferrer">
+          駅すぱあと API
+        </a>
+        チーム）。
+      </p>
+      <p>
+        <span class="year">2023</span>
+        <br>
+        <a href="https://rubybiz.jp/prize_2023.html" target="_blank" rel="noopener noreferrer">
+          Ruby biz grand prix 2023
+        </a>
+        に「駅すぱあと API」として応募し、ソーシャルインパクト賞を受賞。
+      </p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2024 Mizuki901
+  </footer>
 </body>
+
 </html>
