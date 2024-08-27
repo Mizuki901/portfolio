@@ -14,6 +14,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Replace String
         run: sed -i -e "s/GTAG_ID/${{ secrets.GTAG_ID }}/g" index.html
+      - name: Exclude Files
+        run: rm -rf .devcontainer .gitignore .github .vscode node_modules README.md package.json package-lock.json
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
