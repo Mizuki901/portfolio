@@ -99,6 +99,12 @@ header a, header a:visited, #name a, #name a:visited, #icons a, #icons a:visited
   font-size: 0.8rem;
 }
 
+#role {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 p#icons {
   text-align: center;
 }
