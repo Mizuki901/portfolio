@@ -1,3 +1,3 @@
 # Portfolio
 
-https://mizuki901.github.io/portfolio/
+https://mizuki901.github.io/portfolio
