@@ -25,7 +25,7 @@ jobs:
       - name: Replace String
         run: sed -i -e "s/GTAG_ID/${{ secrets.GTAG_ID }}/g" index.html
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.6.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: master
           folder: .
