@@ -110,25 +110,22 @@ p#icons {
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
-  padding: 6px;
+  width: 26px;
+  height: 26px;
   margin: 0 2px;
-  color: white;
-  background-color: gray;
-  border-radius: 50%;
+  color: dark;
 }
 
 .icon#github:hover {
-  background-color: #1f2328;
+  color: #1f2328;
 }
 
 .icon#x:hover {
-  background-color: black;
+  color: black;
 }
 
 .icon#zenn:hover {
-  background-color: #3ea8ff;
+  color: #3ea8ff;
 }
 
 .year {
