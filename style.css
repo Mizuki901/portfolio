@@ -113,7 +113,7 @@ p#icons {
   width: 26px;
   height: 26px;
   margin: 0 2px;
-  color: dark;
+  color: gray
 }
 
 .icon#github:hover {
